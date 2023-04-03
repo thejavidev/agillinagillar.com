@@ -1,0 +1,65 @@
+.homer-banner{
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: calc(var(--vh, 1vh)*65);
+    z-index: -1;
+    .container-fluid{
+      
+        &.s-hero__background{
+            position: fixed;
+            top: 100px;
+            left: 0;
+            &.initial{
+                position: initial;
+            }
+        }
+        .row{
+            padding: 0px;
+            .upvideo{
+                i{
+                    color: #DC248E;
+                    padding-right: 10px;
+                }
+                span{
+                    font-weight: 600;
+                    font-size: 18px;
+                    text-decoration-line: underline;
+                    color: #001A54;
+                    cursor: pointer;
+                }
+            }
+            .text{
+                padding: 0;
+                .content{
+                    height: 100%;
+                    display: flex;
+                    
+                    padding:100px 0px 0px 150px;
+                    flex-direction: column;
+                    h2{
+                        font-weight: 700;
+                        font-size: 27px;
+                        line-height: 30px;
+                        width: 80%;
+                        color: #DC248E;
+                        margin-bottom: 50px;
+                    }
+                    
+                }
+            }
+            .picture{
+                position: relative;
+                padding: 0;
+                .imag{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .video{
+                    display: none;
+                }
+            }
+        }
+    }
+}
